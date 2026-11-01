@@ -1,0 +1,17 @@
+services:
+  web:
+    build: .
+    image: node-lab:v1
+    ports:
+      - "8080:3000"
+    environment:
+      PORT: "3000"
+    read_only: true
+    tmpfs:
+      - /tmp
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    restart: unless-stopped
+    init: true

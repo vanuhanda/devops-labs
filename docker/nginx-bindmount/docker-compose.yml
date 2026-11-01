@@ -1,0 +1,9 @@
+services:
+  web:
+    image: nginx:1.28-alpine
+    ports:
+      - "8081:80"
+    volumes:
+      - ./site:/usr/share/nginx/html:ro
+    restart: unless-stopped
+    init: true
