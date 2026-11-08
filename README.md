@@ -9,3 +9,5 @@ Small hands-on labs, grouped by technology. Larger projects live in their own re
 | docker/notes-postgres | Node API + Postgres, healthcheck, named volume, `.env` secrets |
 
 Related repos: flask-redis-docker, aws-resource-tracker.
+
+| kubernetes/2048 | Namespace, Deployment, Service and Ingress for the 2048 game on minikube (NGINX ingress) |
